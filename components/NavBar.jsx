@@ -5,6 +5,7 @@ import Link from "next/link";
 import NavLink from "./NavLink";
 import Menu from "./Menu";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { motion } from "framer-motion";
 
 const navLinks = [
   {
@@ -24,12 +25,30 @@ const navLinks = [
 const NavBar = () => {
   const [NavBarOpen, setNavBarOpen] = useState(false);
 
+  const navbarAnimation = {
+    hidden: {
+      y: -100,
+    },
+    show: {
+      y: 0,
+      transition: {
+        delay: 1.2,
+        duration: 0.5,
+      },
+    },
+  };
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90">
+    <motion.nav
+      className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90"
+      variants={navbarAnimation}
+      initial="hidden"
+      animate="show"
+    >
       <div className="flex flex-wrap items-center justify-between mx-auto px-4">
         <Link
           href={"/"}
-          className="text-2xl md:text-5xl text-white font-semibold"
+          className="text-2xl md:text-4xl text-white font-semibold"
         >
           LOGO
         </Link>
@@ -61,7 +80,7 @@ const NavBar = () => {
         </div>
       </div>
       {NavBarOpen ? <Menu links={navLinks} /> : null}
-    </nav>
+    </motion.nav>
   );
 };
 
