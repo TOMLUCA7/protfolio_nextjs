@@ -86,7 +86,7 @@ const ProjectsSection = () => {
           isSelected={tag === "Mobile"}
         />
       </div>
-      <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <div className="grid md:grid-cols-2 gap-8 md:gap-12">
         {filteredProjects.map((project) => (
           <ProjectCard
             key={project.id}
