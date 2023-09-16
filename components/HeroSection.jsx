@@ -17,7 +17,7 @@ const HeroSection = () => {
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
-              Hello, I'm{" "}
+              Hello, I am
             </span>
             <br></br>
             <TypeAnimation
@@ -40,8 +40,8 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptatum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit Quisquam
+            voluptatum
           </p>
           {/* buttons */}
           <div>

@@ -7,33 +7,33 @@ import Link from "next/link";
 import Image from "next/image";
 
 const EmailSection = () => {
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
+  // const [emailSubmitted, setEmailSubmitted] = useState(false);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSONdata,
-    };
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
-    console.log(resData);
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   const data = {
+  //     email: e.target.email.value,
+  //     subject: e.target.subject.value,
+  //     message: e.target.message.value,
+  //   };
+  //   const JSONdata = JSON.stringify(data);
+  //   const endpoint = "/api/send";
+  //   const options = {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSONdata,
+  //   };
+  //   const response = await fetch(endpoint, options);
+  //   const resData = await response.json();
+  //   console.log(resData);
 
-    if (response.status === 200) {
-      console.log("Message Sent");
-      setEmailSubmitted(true);
-    }
-  };
+  //   if (response.status === 200) {
+  //     console.log("Message Sent");
+  //     setEmailSubmitted(true);
+  //   }
+  // };
   return (
     <section
       id="contact"
@@ -45,10 +45,10 @@ const EmailSection = () => {
           Let`&apos;s Connect
         </h5>
         <p className="text-[#ADB7BE] text-lg mb-4 max-w-md">
-          {" "}
-          I&apos;m currently looking for new opportunities, my inbox is always
-          open. Whether you have a question or just want to say hi, I&apos;ll
-          try my best to get back to you!
+          <br />
+          Im currently looking for new opportunities, my inbox is always open.
+          Whether you have a question or just want to say hi, I will try my best
+          to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="github.com">
@@ -60,7 +60,7 @@ const EmailSection = () => {
         </div>
       </div>
       <div className="z-10">
-        <form className="flex flex-col" onSubmit={handleSubmit}>
+        <form className="flex flex-col">
           <div className="mb-6">
             <label
               htmlFor="email"
@@ -113,9 +113,9 @@ const EmailSection = () => {
           >
             Send Message
           </button>
-          {emailSubmitted && (
+          {/* {emailSubmitted && (
             <p className="text-green-500 mt-5">Email Send successful</p>
-          )}
+          )} */}
         </form>
       </div>
     </section>
