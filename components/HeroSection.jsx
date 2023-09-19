@@ -41,8 +41,8 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Hi, everyone, welcome to my portfolio website I hope you're going to
-            enjoy it
+            Hi, everyone, welcome to my portfolio website I hope you are going
+            to enjoy it
           </p>
           {/* buttons  Download CV Hire me*/}
           <div>
