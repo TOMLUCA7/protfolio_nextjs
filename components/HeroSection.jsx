@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -43,13 +44,15 @@ const HeroSection = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit Quisquam
             voluptatum
           </p>
-          {/* buttons */}
+          {/* buttons  Download CV Hire me*/}
           <div>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:border-white hover:border text-white">
-              Hire me
+              <Link href="#contact">Hire me</Link>
             </button>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white border border-white mt-3">
-              Download CV
+              <a href="/CV.pdf" download>
+                Download CV
+              </a>
             </button>
           </div>
         </motion.div>
