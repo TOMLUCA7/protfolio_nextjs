@@ -12,7 +12,7 @@ const projectsData = [
     description: "Memory game build with react js",
     image: "projectsImages/memory_game.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/TOMLUCA7/memory-game",
     previewUrl: "/",
   },
   {
@@ -21,7 +21,7 @@ const projectsData = [
     description: "Nike shoes web build with react js and next.js 13",
     image: "projectsImages/nike_shoes.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/TOMLUCA7/nike_shop",
     previewUrl: "/",
   },
   {
@@ -31,7 +31,7 @@ const projectsData = [
       "travel app show different places you can choose from the app build with React Native",
     image: "projectsImages/travel_app.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/TOMLUCA7/travel-app",
     previewUrl: "/",
   },
   {
@@ -41,7 +41,7 @@ const projectsData = [
       "The weather app will be able to show different places from which you can know the weatherion the app build with React Native",
     image: "projectsImages/weather_app.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/TOMLUCA7/Weather-App",
     previewUrl: "/",
   },
 ];
